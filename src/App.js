@@ -8,6 +8,7 @@ import "./App.css";
 function showPosition(position){
   console.log(position.coords.latitude)
   console.log(position.coords.longitude)
+
 }
 
 function App() {
@@ -22,13 +23,28 @@ function App() {
         } else {
           console.log("Geolocation is not supported by this browser")
         }}}>report shooting</button>
-        <iframe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <iframe
           width="600"
           height="450"
           frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLwPMoJm1RIYRetVp1EtGm10&key=AIzaSyDsCYHfrvL3BCw_P2_8cydu1Eu16xV-BE8"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLwPMoJm1RIYRetVp1EtGm10&"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
         
       </header>
     </div>
