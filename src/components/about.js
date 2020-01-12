@@ -7,7 +7,7 @@ export default class about extends Component {
     render() {
         return (
             <div>
-                <NavBar/>
+                
                 <h1>about page</h1>
             </div>
         )

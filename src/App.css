@@ -86,3 +86,11 @@
   color: crimson;
   background-color: greenyellow;
 }
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: rgb(60, 207, 15) !important;
+}
+.makeStyles-avatar-126 {
+  margin: 8px;
+  background-color: greenyellow !important;
+}

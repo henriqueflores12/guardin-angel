@@ -26,8 +26,8 @@ class Home extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <NavBar />
-          <h3>report if you think that this place is not safe to other come here</h3>
+          
+          <h3>report if you think that this place is not safe to others come here</h3>
        
           <button className="report"
             onClick={() => {

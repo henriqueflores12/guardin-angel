@@ -1,20 +1,20 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import MapContainer from "./componets/MapContainer";
-import NavBar from "./componets/NavBar";
-import Home from "./componets/Home";
-import {BrowserRouter} from "react-router-dom";
-import Router from "./router"
+import NavBar from "./containers/NavBarContainer";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 class App extends React.Component {
- 
   render() {
     return (
-     <BrowserRouter>
-     {/* <NavBar/> */}
-     <Router/>
-     </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <NavBar />
+          <Router />
+        </BrowserRouter>
+      </Provider>
     );
   }
 }
