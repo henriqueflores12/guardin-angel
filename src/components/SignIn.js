@@ -12,6 +12,8 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { withRouter } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -48,7 +50,10 @@ const useStyles = makeStyles(theme => ({
 
 export default function SignIn(props) {
   const classes = useStyles();
-
+  console.log(props);
+  if (props.login) {
+    return <Redirect to="/" />;
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -86,8 +91,11 @@ export default function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
+
           <Button
-            onClick={props.setLogin}
+            onClick={() => {
+              props.setLogin(true);
+            }}
             fullWidth
             variant="contained"
             color="primary"
@@ -95,6 +103,7 @@ export default function SignIn(props) {
           >
             Sign In
           </Button>
+
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
@@ -102,7 +111,7 @@ export default function SignIn(props) {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/UserAccount" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

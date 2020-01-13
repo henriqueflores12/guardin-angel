@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import blog from "./components/blog";
 import about from "./components/about";
 import safelocations from "./components/safelocations";
+import UserAccount from "./components/userAccount";
 
 const Router = () => {
   console.log("env process in router", process.env);
@@ -17,6 +18,7 @@ const Router = () => {
       <Route path="/blog" component={blog} />
       <Route path="/about" component={about} />
       <Route path="/safelocations" component={safelocations} />
+      <Route path="/UserAccount" component={UserAccount} />
     </Switch>
   );
 };

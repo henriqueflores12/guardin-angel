@@ -1,10 +1,9 @@
 export const setLogin = boolean => {
-  console.log('here')
+  console.log('here')  
   return {
     type: "SET_LOGIN_STATUS",
     value: boolean // true or false
   }
-
 };
   export const setUser = user => {
     return {

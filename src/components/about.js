@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
-import Router from '../router'
-import NavBar from './NavBar'
-import {Link} from 'react-router-dom'
+import React, { Component } from "react";
+import Router from "../router";
+import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 
 export default class about extends Component {
-    render() {
-        return (
-            <div>
-                
-                <h1>about page</h1>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <h1>about page</h1>
+      </div>
+    );
+  }
 }

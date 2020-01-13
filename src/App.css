@@ -14,16 +14,14 @@
 }
 
 .App-header {
-  background-color:black;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
-  
-
 }
 
 .App-link {
@@ -38,27 +36,26 @@
     transform: rotate(360deg);
   }
 }
-.Map{
+.Map {
   width: 300px !important;
   height: 300px !important;
-  position: relative !important;  
+  position: relative !important;
 }
-.map{
- 
+.map {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
 }
-.root{
-  width:100%;
+.root {
+  width: 100%;
 }
-.App{
-  background-color: black;  
+.App {
+  background-color: black;
 }
 .MuiAppBar-colorPrimary {
-  color: gray !important;
-  background-color:rgb(115, 255, 0)!important;
+  color: black !important;
+  background-color: rgb(115, 255, 0) !important;
 }
 .loginContainer {
   text-align: center;
@@ -68,21 +65,19 @@
   height: 180px;
   margin-top: 100px;
   margin-left: 400px;
-  background-color:greenyellow;
-  text-decoration:yellow;
+  background-color: greenyellow;
+  text-decoration: yellow;
   border-style: solid;
-  
 }
 
-
-.login{
+.login {
   background-color: rgba(11, 114, 19, 0.288);
   color: rgba(20, 73, 75, 0.397);
 }
-.title{
+.title {
   text-align: center;
 }
-.report{
+.report {
   color: crimson;
   background-color: greenyellow;
 }
@@ -93,4 +88,55 @@
 .makeStyles-avatar-126 {
   margin: 8px;
   background-color: greenyellow !important;
+}
+
+form {
+  width: 100%;
+}
+
+.loginBox {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+}
+
+.signUpSubmit {
+  margin: 25px 0 15px 0;
+}
+
+.pwStrRow {
+  width: 63%;
+  text-align: left;
+  margin: auto;
+  padding: 0;
+  font-size: 12px;
+}
+
+.pwStrWeak {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+.pwStrStrong {
+  display: inline-block;
+  position: relative;
+  left: 77%;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+@media screen and (max-width: 550px) {
+  .loginBox {
+    width: 85%;
+  }
 }
