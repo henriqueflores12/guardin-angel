@@ -8,18 +8,21 @@ const images = [
   {
     url:
       "https://cdn.thecrazytourist.com/wp-content/uploads/2019/03/ccimage-shutterstock_769311505.jpg",
+      route:"/safelocations",
     title: "safe",
     width: "40%"
   },
   {
     url:
       "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492190255/articles/2014/12/08/dutch-and-german-bikers-fighting-isis/141208-bike-gang-tease_pvvttn",
+      route:"/unsafe",
     title: "unsafe",
     width: "30%"
   },
   {
     url:
       "https://s1.cdn.autoevolution.com/images/news/carjackers-prefer-stealing-old-cars-3485_1.jpg",
+      route:"/home",
     title: "report",
     width: "30%"
   }
@@ -122,6 +125,7 @@ export default function ButtonBases() {
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton}>
+            <Link to = {image.route}>
             <Typography
               component="span"
               variant="subtitle1"
@@ -131,6 +135,7 @@ export default function ButtonBases() {
               {image.title}
               <span className={classes.imageMarked} />
             </Typography>
+            </Link>
           </span>
         </ButtonBase>
       ))}

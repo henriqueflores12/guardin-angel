@@ -38,11 +38,11 @@ export default function NavBar(props) {
       <Link to="/">
         <Button className="logi">home</Button>
       </Link>
-      <Link to="/blog">
-        <Button className="logi">blog</Button>
-      </Link>
       <Link to="/about">
         <Button className="logi">about</Button>
+      </Link>
+      <Link to="/unsafe">
+        <Button className="logi">unsafe</Button>
       </Link>
       <Link to="/home">
         <Button className="logi">report this location</Button>
@@ -59,14 +59,14 @@ export default function NavBar(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
           >
-            <MenuIcon />
-          </IconButton>
+            {/* <MenuIcon /> */}
+          </IconButton> 
           <Typography variant="h6" className={classes.title}>
             Guardian Angel
           </Typography>

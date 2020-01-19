@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: black;
-  min-height: 100vh;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/447/690/552/skydiver-men-video-games-steep-mountains-snow-sun-parachutes-skydiving-snowboards-clouds-wingsuit-ubisoft-flying-paragliding-wallpaper-preview.jpg);
+  min-height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: 100%;
 }
 
 .App-link {
@@ -50,9 +50,7 @@
 .root {
   width: 100%;
 }
-.App {
-  background-color: black;
-}
+
 .MuiAppBar-colorPrimary {
   color: black !important;
   background-color: rgb(115, 255, 0) !important;
@@ -78,8 +76,11 @@
   text-align: center;
 }
 .report {
-  color: crimson;
-  background-color: greenyellow;
+  color: yellow;
+  background-color: gray;
+  border: 1px solid greenyellow;
+
+  /* margin-right: 700px; */
 }
 .MuiButton-containedPrimary {
   color: #fff;
@@ -102,7 +103,7 @@ form {
   transform: translate(-50%, 20%);
   padding: 20px;
   background-color: white;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px 2px rgb(0, 0, 0);
 }
 
 .signUpSubmit {
@@ -139,4 +140,108 @@ form {
   .loginBox {
     width: 85%;
   }
+}
+.posts {
+  border: 2px solid greenyellow;
+  width: 300px;
+  height: 100px;
+}
+.postbutton {
+  color: yellow;
+  background-color: grey;
+  border-color: greenyellow;
+}
+.root1 {
+  border: 2px solid greenyellow;
+  height: 390px;
+  display: flex;
+  overflow-wrap: break-word;
+  background-color: rgb(96, 96, 170);
+}
+
+.titlePost {
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-y:scroll;
+  padding: 20px;
+}
+.geolocationbox {
+  border: 2px solid greenyellow;
+  height: 260px;
+  width: 194px;
+}
+.geotext {
+  text-decoration: underline;
+  color:greenyellow;
+}
+.geotext2 {
+  text-decoration: underline;
+  color: greenyellow;
+}
+.lng {
+  color:blue;
+}
+.lat {
+  color:blue;
+}
+.newPost {
+  justify-content: right;
+}
+.about {
+  width: auto;
+}
+.safemap {
+  position: absolute;
+  top: 145px;
+  right: 16px;
+  font-size: 18px;
+}
+.bodysafe {
+  background-color: grey;
+  height: 1000px;
+  width: auto;
+}
+.h1safe {
+  color: gray;
+  background-color: rgb(28, 31, 24);
+}
+.commentspostcolor {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+}
+.commentspostcolor li{
+  list-style-type:none;
+}
+.commets1 {
+  color: rgb(0, 0, 0);
+}
+.unsafeMap{
+  display: flex;
+  flex-direction: row;
+  
+}
+.backunsafe{
+  background-image: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2019/01/16110926/mount-shuksan-Feb2014_Pixabay.jpg);
+  background-size: 100%;
+  min-height: 130vh;
+}
+.MuiInputBase-input{
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1875em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: rgb(96, 96, 170);
+  box-sizing: content-box;
+  animation-name: MuiInputBase-keyframes-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+}
+.commentcolor{
+  text-decoration-line: underline;
 }
