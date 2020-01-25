@@ -23,7 +23,7 @@ const images = [
     url:
       "https://s1.cdn.autoevolution.com/images/news/carjackers-prefer-stealing-old-cars-3485_1.jpg",
       route:"/home",
-    title: "report",
+    title: "get geolocation",
     width: "30%"
   }
 ];

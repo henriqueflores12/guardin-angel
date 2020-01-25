@@ -17,4 +17,16 @@ export const setLogin = boolean => {
       value: false
     };
   };
-
+  export const postadd = post => {
+    console.log('it hit actions', post)
+    return {
+      type: "CREATE_POST",
+      value: post
+    };
+  };
+  export const deletePost = post => {
+    return {
+      type: "DELETE_POST",
+      value: post
+    };
+  };

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/447/690/552/skydiver-men-video-games-steep-mountains-snow-sun-parachutes-skydiving-snowboards-clouds-wingsuit-ubisoft-flying-paragliding-wallpaper-preview.jpg);
+  background-color: rgb(94, 91, 90);
   min-height: 130vh;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,9 @@ form {
 }
 
 .loginBox {
-  width: 50%;
+  width: 500px;
+  height: 700px;
+
   text-align: center;
   position: relative;
   left: 50%;
@@ -143,8 +145,8 @@ form {
 }
 .posts {
   border: 2px solid greenyellow;
-  width: 300px;
-  height: 100px;
+  width: 1200px;
+  height: 900px;
 }
 .postbutton {
   color: yellow;
@@ -153,42 +155,44 @@ form {
 }
 .root1 {
   border: 2px solid greenyellow;
-  height: 390px;
+  height: 799px;
   display: flex;
   overflow-wrap: break-word;
-  background-color: rgb(96, 96, 170);
+  background-color: rgb(228, 228, 240);
 }
 
 .titlePost {
   width: 100%;
   flex-wrap: wrap;
-  overflow-y:scroll;
+  overflow-y: scroll;
   padding: 20px;
+  height: 755px;
 }
 .geolocationbox {
   border: 2px solid greenyellow;
-  height: 260px;
-  width: 194px;
+  height: 500px;
+  width: 400px;
 }
 .geotext {
   text-decoration: underline;
-  color:greenyellow;
+  color: greenyellow;
 }
 .geotext2 {
   text-decoration: underline;
   color: greenyellow;
 }
 .lng {
-  color:blue;
+  color: blue;
 }
 .lat {
-  color:blue;
+  color: blue;
 }
 .newPost {
   justify-content: right;
 }
 .about {
   width: auto;
+  margin-left: 850px;
 }
 .safemap {
   position: absolute;
@@ -211,23 +215,22 @@ form {
   flex-direction: column;
   padding-inline-start: 0;
 }
-.commentspostcolor li{
-  list-style-type:none;
+.commentspostcolor li {
+  list-style-type: none;
 }
 .commets1 {
   color: rgb(0, 0, 0);
 }
-.unsafeMap{
+.unsafeMap {
   display: flex;
   flex-direction: row;
-  
 }
-.backunsafe{
-  background-image: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2019/01/16110926/mount-shuksan-Feb2014_Pixabay.jpg);
+.backunsafe {
+  background-color: rgb(94, 91, 90);
   background-size: 100%;
   min-height: 130vh;
 }
-.MuiInputBase-input{
+.MuiInputBase-input {
   font: inherit;
   color: currentColor;
   width: 100%;
@@ -242,6 +245,78 @@ form {
   animation-name: MuiInputBase-keyframes-auto-fill-cancel;
   -webkit-tap-highlight-color: transparent;
 }
-.commentcolor{
-  text-decoration-line: underline;
+.commentcolor {
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+
+  /* width: 90%;
+ height: 90%;
+ color: rgb(14, 1, 1);
+ display: flex;
+ justify-content: start;
+ flex-wrap: wrap;
+ overflow:scroll;
+ overflow-x: scroll;
+ overflow-y: hidden; */
+}
+.commentboarder {
+  border: double;
+  border-radius: 100px;
+  border-top-color: gray;
+  border-right-color: gray;
+  border-left-color: gray;
+  border-bottom-color: gray;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-left: 10px;
+}
+.div1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+
+}
+.deletpost {
+  height: 20px;
+  background-color: red;
+  border-style: double;
+  border-color: rgb(115, 255, 0);
+}
+.geoborder {
+  border-bottom-color: yellow;
+  border-top: gold;
+  border-style: double;
+}
+.textabout {
+  width: 600px;
+  margin-left: 600px;
+  margin-top: 200px;
+  font-size: 7mm;
+}
+.postsafe1 {
+  background-color: rgb(94, 91, 90);
+  margin-left: 380px;
+}
+.textget {
+  border-style: double;
+  background-color: grey;
+}
+.lat {
+  text-underline-position: below;
+}
+.iconsupdown{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
+.no{
+  padding: 0px;
+  margin: 0;
 }

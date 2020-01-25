@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
-import Avatar from '@material-ui/core/Avatar';
-import vegeta from './image/vegeta.png';
-
+import Avatar from "@material-ui/core/Avatar";
+import vegeta from "./image/vegeta.png";
+import Icon from "@material-ui/core/Icon";
+import ThumbUpTwoToneIcon from "@material-ui/icons/ThumbUpTwoTone";
+import ThumbDownTwoToneIcon from "@material-ui/icons/ThumbDownTwoTone";
 
 export default class posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      dislikes:0,
+      likes:0,
       text: "",
       comments: []
     };
@@ -18,12 +22,14 @@ export default class posts extends Component {
   };
   submit = () => {
     let newComments = this.state.comments;
-    newComments.push(this.state.text);
+    newComments.unshift(this.state.text);
+    this.props.postadd(newComments)
     this.setState({
       comments: newComments,
       text: ""
     });
   };
+
   render() {
     console.log(this.state);
     console.log(this.props, "here ok");
@@ -35,10 +41,10 @@ export default class posts extends Component {
         <TextField
           className="textfield1"
           onChange={this.changetext}
-          onKeyDown={(e)=>{
-            console.log(e.which, e.target.value)
-            if(e.which === 13){
-              this.submit()
+          onKeyDown={e => {
+            console.log(e.which, e.target.value);
+            if (e.which === 13) {
+              this.submit();
             }
           }}
           variant="outlined"
@@ -50,22 +56,62 @@ export default class posts extends Component {
         />
         <div className="root1">
           <div className="titlePost">
-            <h2>post</h2>
+            <h2 className="textget">
+              post here about safe or unsafe or a get geolocation
+            </h2>
             <ul className="commentspostcolor">
-              {this.state.comments.map((comment, index) => (
+              {this.props.comments.map((comment, index) => (
                 <li key={index} className="commets1">
                   <Avatar alt="Remy Sharp" src={vegeta} />
-                  <p className="commentcolor" onClick={()=>{
-                    let latlng=comment.split(' ')
-                    let position= {
-                      coords: {
-                        latitude: Number(latlng[0]),
-                        longitude: Number(latlng[1])
-                      }
-                      
-                    } 
-                    this.props.showPosition(position)
-                  }}>{comment}</p>
+                  <div className="commentboarder">
+                    <div className="div1">
+                      <p
+                        className="commentcolor"
+                        onClick={() => {
+                          let latlng = comment.split(" ");
+                          let position = {
+                            coords: {
+                              latitude: Number(latlng[0]),
+                              longitude: Number(latlng[1])
+                            }
+                          };
+                          this.props.showPosition(position);
+                        }}
+                      >
+                        {comment}
+                      </p>
+                      <button
+                        onClick={() => {
+                          console.log(this.props);
+                          var commentsNew = this.props.comments;
+                          commentsNew.splice(index, 1);
+                          console.log(commentsNew);
+                          this.setState({ comments: commentsNew });
+                          this.props.deletePost(commentsNew)
+                        }}
+                        className="deletpost"
+                      >
+                        x
+                      </button>
+                    </div>
+                     
+                    <div className="iconsupdown">
+                    <h4 className="no">{this.state.likes}</h4>
+                    <button onClick={()=>{
+                      console.log(this.state.likes)
+                      this.setState({likes:this.state.likes+1})
+                    }}>
+                      <ThumbUpTwoToneIcon />
+                    </button>
+                    <button onClick={()=>{
+                      console.log(this.state.dislikes)
+                      this.setState({dislikes:this.state.dislikes+1})
+                    }}>
+                      <ThumbDownTwoToneIcon />
+                    </button>
+                  <h4 className="no">{this.state.dislikes}</h4>
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>

@@ -29,7 +29,7 @@ class Home extends React.Component {
       <div className="App">
         <header className="App-header">
           <h3>
-            report if you think that this place is not safe to others come here
+          "Keep your community safe with friends in a simple post or comments"
           </h3>
           <div className="map">
             <button
@@ -42,7 +42,7 @@ class Home extends React.Component {
                 }
               }}
             >
-              report
+              you are here
             </button>
             <MapContainer lat={this.state.lat} lng={this.state.lng} />
             <Posts showPosition={this.showPosition} />

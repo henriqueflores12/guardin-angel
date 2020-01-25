@@ -8,7 +8,7 @@ export default class about extends Component {
     return (
       <div>
         <h1 className="about">about</h1>
-        <p>
+        <p className="textabout">
           this app
           uses a new and unique way of matching people with the best
           neighborhoods for them and their families. This approach uses the

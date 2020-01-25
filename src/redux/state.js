@@ -3,5 +3,5 @@ export default {
         emailAddress: '',
         password: ''
     },
-    login:false,              
+    login:false,
 }
