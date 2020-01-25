@@ -34,7 +34,7 @@ class Home extends React.Component {
           <div className="map">
             <button
               className="report"
-              onClick={() => {
+              onClick={() => {                
                 if (navigator.geolocation) {
                   navigator.geolocation.getCurrentPosition(this.showPosition);
                 } else {

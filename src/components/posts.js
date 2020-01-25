@@ -10,8 +10,8 @@ export default class posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dislikes:0,
-      likes:0,
+      dislikes: 0,
+      likes: 0,
       text: "",
       comments: []
     };
@@ -23,7 +23,7 @@ export default class posts extends Component {
   submit = () => {
     let newComments = this.state.comments;
     newComments.unshift(this.state.text);
-    this.props.postadd(newComments)
+    this.props.postadd(newComments);
     this.setState({
       comments: newComments,
       text: ""
@@ -47,6 +47,7 @@ export default class posts extends Component {
               this.submit();
             }
           }}
+          value={this.state.text}
           variant="outlined"
           margin="normal"
           not-required
@@ -87,29 +88,33 @@ export default class posts extends Component {
                           commentsNew.splice(index, 1);
                           console.log(commentsNew);
                           this.setState({ comments: commentsNew });
-                          this.props.deletePost(commentsNew)
+                          this.props.deletePost(commentsNew);
                         }}
                         className="deletpost"
                       >
                         x
                       </button>
                     </div>
-                     
+
                     <div className="iconsupdown">
-                    <h4 className="no">{this.state.likes}</h4>
-                    <button onClick={()=>{
-                      console.log(this.state.likes)
-                      this.setState({likes:this.state.likes+1})
-                    }}>
-                      <ThumbUpTwoToneIcon />
-                    </button>
-                    <button onClick={()=>{
-                      console.log(this.state.dislikes)
-                      this.setState({dislikes:this.state.dislikes+1})
-                    }}>
-                      <ThumbDownTwoToneIcon />
-                    </button>
-                  <h4 className="no">{this.state.dislikes}</h4>
+                      <h4 className="no">{this.state.likes}</h4>
+                      <button
+                        onClick={() => {
+                          console.log(this.state.likes);
+                          this.setState({ likes: this.state.likes + 1 });
+                        }}
+                      >
+                        <ThumbUpTwoToneIcon />
+                      </button>
+                      <button
+                        onClick={() => {
+                          console.log(this.state.dislikes);
+                          this.setState({ dislikes: this.state.dislikes + 1 });
+                        }}
+                      >
+                        <ThumbDownTwoToneIcon />
+                      </button>
+                      <h4 className="no">{this.state.dislikes}</h4>
                     </div>
                   </div>
                 </li>
