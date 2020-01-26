@@ -322,7 +322,7 @@ form {
   margin: 0;
 }
 .MuiTypography-colorInherit {
-  color: azure !;
+  color: azure !important;
 }
 .geotitle{
   background-color: whitesmoke;
@@ -335,4 +335,7 @@ form {
   border: 4px solid darkorange;
   border-style: double;
   border-radius: 4px;
+}
+.MuiButton-root {
+  color: darkorange ! important;
 }

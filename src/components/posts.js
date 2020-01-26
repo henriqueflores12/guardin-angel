@@ -57,9 +57,9 @@ export default class posts extends Component {
         />
         <div className="root1">
           <div className="titlePost">
-            <h2 className="textget">
-              after you post geolocation number here then space and create your menssage describing the location
-            </h2>
+            <h4 className="textget">
+              Paste your geolaction here and a comment to let people know what's happening in that area.
+            </h4>
             <ul className="commentspostcolor">
               {this.props.comments.map((comment, index) => (
                 <li key={index} className="commets1">

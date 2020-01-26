@@ -9,8 +9,9 @@ export default class geolocation extends Component {
   render() {
     return (
       <div className="geolocationbox">
-          <h3 className="geotitle">copy and post the numbers below</h3>
-          <h4 className="infogeotext">click at the button "you are here" and get the geolocation lat and lng first and then you can write your post </h4>
+          <h3 className="geotitle">click at the button "you are here" and get the geolocation lat and lng first
+          then you can copy the numbers in red and paste and write your post after</h3>
+        
         <p className="geotext">latitude</p>
         <div className="geoborder">
         <div className="lat">{this.props.lat}</div>

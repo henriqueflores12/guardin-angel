@@ -42,13 +42,13 @@ export default function NavBar(props) {
         <Button className="logi">about</Button>
       </Link>
       <Link to="/unsafe">
-        <Button className="logi">reportunsafe</Button>
+        <Button className="logi">unsafe</Button>
       </Link>
       <Link to="/home">
-        <Button className="logi">getgeolocation</Button>
+        <Button className="logi">get geolocation</Button>
       </Link>
       <Link to="/safelocations">
-        <Button className="logi">safelocations</Button>
+        <Button className="logi">safe</Button>
       </Link>
       <Link to="/">
         <Button className="logi"onClick={props.logout}>log out</Button>
