@@ -58,7 +58,7 @@ export default class posts extends Component {
         <div className="root1">
           <div className="titlePost">
             <h2 className="textget">
-              post here about safe or unsafe or a get geolocation
+              after you post geolocation number here then space and create your menssage describing the location
             </h2>
             <ul className="commentspostcolor">
               {this.props.comments.map((comment, index) => (

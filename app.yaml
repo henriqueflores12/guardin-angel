@@ -1,4 +1,5 @@
 runtime: nodejs10
+
 env_variables:
   CLOUD_INSTANCE: safe-map-guardianangel:us-central1:guadianangel123
 

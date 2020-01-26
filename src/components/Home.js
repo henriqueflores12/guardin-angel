@@ -29,12 +29,17 @@ class Home extends React.Component {
       <div className="App">
         <header className="App-header">
           <h3>
-          "Keep your community safe with friends in a simple post or comments"
+            Keep your community safe with friends in a simple post or comments
           </h3>
           <div className="map">
             <button
               className="report"
-              onClick={() => {                
+              onClick={() => {
+                fetch(
+                  `https://www.googleapis.com/geolocation/v1/geolocate?key=${process.env.REACT_APP_GOOGLEMAPAPIKEY}`
+                ).then(res => {
+                  console.log(res.json);
+                });
                 if (navigator.geolocation) {
                   navigator.geolocation.getCurrentPosition(this.showPosition);
                 } else {

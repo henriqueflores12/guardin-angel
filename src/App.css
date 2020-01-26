@@ -78,9 +78,11 @@
 .report {
   color: yellow;
   background-color: gray;
-  border: 1px solid greenyellow;
+  border: 4px solid greenyellow;
+  border-style: double;
+  border-radius: 4px;
 
-  /* margin-right: 700px; */
+  
 }
 .MuiButton-containedPrimary {
   color: #fff;
@@ -144,9 +146,10 @@ form {
   }
 }
 .posts {
+  border-radius: 4px;
   border: 2px solid greenyellow;
   width: 1200px;
-  height: 900px;
+  height: 107px;
 }
 .postbutton {
   color: yellow;
@@ -154,7 +157,9 @@ form {
   border-color: greenyellow;
 }
 .root1 {
-  border: 2px solid greenyellow;
+  border-style: double;
+  border-radius: 4px;
+  border: 4px solid greenyellow;
   height: 799px;
   display: flex;
   overflow-wrap: break-word;
@@ -162,15 +167,18 @@ form {
 }
 
 .titlePost {
+  height: 720;
   width: 100%;
   flex-wrap: wrap;
   overflow-y: scroll;
   padding: 20px;
-  height: 755px;
+ 
 }
 .geolocationbox {
-  border: 2px solid greenyellow;
-  height: 500px;
+  border-style: double;
+  border-radius: 4px;
+  border: 4px solid greenyellow;
+  height: 600px;
   width: 400px;
 }
 .geotext {
@@ -182,10 +190,10 @@ form {
   color: greenyellow;
 }
 .lng {
-  color: blue;
+  color: red;
 }
 .lat {
-  color: blue;
+  color: red;
 }
 .newPost {
   justify-content: right;
@@ -246,27 +254,17 @@ form {
   -webkit-tap-highlight-color: transparent;
 }
 .commentcolor {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: red;
   width: 100%;
   flex-wrap: wrap;
   overflow-y: hidden;
-
-  /* width: 90%;
- height: 90%;
- color: rgb(14, 1, 1);
- display: flex;
- justify-content: start;
- flex-wrap: wrap;
- overflow:scroll;
- overflow-x: scroll;
- overflow-y: hidden; */
 }
 .commentboarder {
-  border: double;
+  border: 4px solid darkorange;
+  border-style: double;
   border-radius: 100px;
-  border-top-color: gray;
-  border-right-color: gray;
-  border-left-color: gray;
-  border-bottom-color: gray;
   max-width: 90%;
   display: flex;
   flex-direction: column;
@@ -289,9 +287,10 @@ form {
   border-color: rgb(115, 255, 0);
 }
 .geoborder {
-  border-bottom-color: yellow;
-  border-top: gold;
+  background-color: whitesmoke;
+  border: 4px solid darkorange;
   border-style: double;
+  border-radius: 4px;
 }
 .textabout {
   width: 600px;
@@ -302,6 +301,8 @@ form {
 .postsafe1 {
   background-color: rgb(94, 91, 90);
   margin-left: 380px;
+
+
 }
 .textget {
   border-style: double;
@@ -319,4 +320,19 @@ form {
 .no{
   padding: 0px;
   margin: 0;
+}
+.MuiTypography-colorInherit {
+  color: azure !;
+}
+.geotitle{
+  background-color: whitesmoke;
+  border: 4px solid darkorange;
+  border-style: double;
+  border-radius: 4px;
+}
+.infogeotext{
+  background-color: whitesmoke;
+  border: 4px solid darkorange;
+  border-style: double;
+  border-radius: 4px;
 }
