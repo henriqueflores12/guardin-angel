@@ -256,10 +256,11 @@ form {
 .commentcolor {
   color: blue;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: BLUE;
   width: 100%;
   flex-wrap: wrap;
   overflow-y: hidden;
+ 
 }
 .commentboarder {
   border: 4px solid darkorange;
@@ -325,7 +326,8 @@ form {
   color: azure !important;
 }
 .geotitle{
-  background-color: whitesmoke;
+  margin: 0%;
+  background-color: gray;
   border: 4px solid darkorange;
   border-style: double;
   border-radius: 4px;

@@ -21,7 +21,7 @@ const images = [
   },
   {
     url:
-      "https://s1.cdn.autoevolution.com/images/news/carjackers-prefer-stealing-old-cars-3485_1.jpg",
+      "https://previews.123rf.com/images/abscent/abscent1602/abscent160200026/52221995-navigation-geolocation-icon-city-map-with-red-pin-vector-illustration-in-flat-design-on-green-backgr.jpg",
       route:"/home",
     title: "get geolocation",
     width: "30%"
