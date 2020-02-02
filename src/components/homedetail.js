@@ -141,7 +141,7 @@ export default function ButtonBases() {
       ))}
       <div>
         <h1>
-          Keep your community safe with friends in a simple post or comments
+          Keep your community safe with friends in a simple post or a chat
         </h1>
       </div>
     </div>

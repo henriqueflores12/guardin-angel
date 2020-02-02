@@ -199,8 +199,8 @@ form {
   justify-content: right;
 }
 .about {
-  width: auto;
-  margin-left: 850px;
+  width: 100%;
+
 }
 .safemap {
   position: absolute;
@@ -293,12 +293,7 @@ form {
   border-style: double;
   border-radius: 4px;
 }
-.textabout {
-  width: 600px;
-  margin-left: 600px;
-  margin-top: 200px;
-  font-size: 7mm;
-}
+
 .postsafe1 {
   background-color: rgb(94, 91, 90);
   margin-left: 380px;
@@ -340,4 +335,7 @@ form {
 }
 .MuiButton-root {
   color: darkorange ! important;
+}
+.aboutbox{
+  width: 100%;
 }

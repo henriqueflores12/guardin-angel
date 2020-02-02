@@ -6,7 +6,7 @@ router.get('/home', postsController.getAllUserPosts)
 
 router.get('/home', postsController.getPostById)
 
-router.post('/home', postsController.createPost)
+router.post('/location', postsController.createPost)
 
 router.put('/home', postsController.updatePostById)
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default class about extends Component {
   render() {
     return (
-      <div>
+      <div className="aboutbox">
         <h1 className="about">about</h1>
         <p className="textabout">
           this app

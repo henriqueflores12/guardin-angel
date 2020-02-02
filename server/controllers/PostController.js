@@ -22,7 +22,11 @@ const getPostById = (req, res) => {
 
 const createPost = (req, res) => {
   console.log("REQPARAMS:", req.params.id)
-  pool.query('INSERT INTO posts SET ?', { user_id: `${req.params.id}`, date: `${req.body.date}`, time: `${req.body.time}`, location: `${req.body.location}`, description: `${req.body.description}`}, (err, results) => {
+  console.log(req.body,"here i am dude")
+  let sql = 'insert into posts (description,location) value (?,?)'
+const replacements = [req.body.description,req.body.location]
+sql = mysql.format(sql, replacements)
+  pool.query(sql,  (err, results) => {
     if (err) return handleSQLError(res, err)
     return res.json({ newId: results.insertId });
   })
